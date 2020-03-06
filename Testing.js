@@ -74,5 +74,9 @@ for (i = 0; i < 10; i++){
 
    gpa = ((gpa141 + gpa142 + gpa240 + gpa241)/4);
    console.log("Name: " + name);
-   console.log("GPA: " + gpa + "\n");
+   console.log("GPA: " + gpa.toFixed(1));
+    if (gpa < 2.5)
+      console.log("This GPA does not meet the requirement of 2.5" + "\n");
+   else
+      console.log("This GPA meets the requirement of 2.5" + "\n");
 }
